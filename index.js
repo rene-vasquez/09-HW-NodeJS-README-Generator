@@ -31,9 +31,10 @@ const promptUser = () => {
       message: 'Enter usage information',
     },
     {
-      type: 'input',
+      type: 'list',
       name: 'license',
       message: 'Enter the type of license.',
+      choices: ['Apache','MIT', 'Creative Commons']
     },
     {
         type: 'input',
@@ -49,14 +50,36 @@ const promptUser = () => {
 };
 
 const generateREADME = ({ title, description, toc, installation, usage, license, contributions, testing }) =>
-`Title:${title}
-What does this code do?:${description}
-Table of Content?:${toc}
-How to install this app:${installation}
-How to use this app: ${usage}
-License type: ${license}
-Contributions: ${contributions}
-Testing Instructions: ${testing}`
+`
+# ${title}
+## What does this code do?
+
+${description}
+
+## Table of Contents
+
+${toc}
+
+## How to install this app
+
+${installation}
+
+## How to use this app
+
+${usage}
+
+## License Type
+
+${license}
+
+## Contributions
+
+${contributions}
+
+## Testing Instructions
+
+${testing}
+`
 ;
 
 const init = () => {

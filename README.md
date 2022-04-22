@@ -1,8 +1,29 @@
-Title:README Generator
-What does this code do?:This project generates properly formatted README files wihtin the Terminal
-Table of Content?:N/A
-How to install this app:Simply run 'node index.js' within your VSCode terminal
-How to use this app: N/A
-License type: MIT
-Contributions: N/A
-Testing Instructions: N/A
+
+# README Generator
+## What does this code do?
+
+This automatically generates a README file based on user input with Node
+
+## Table of Contents
+
+N/S
+
+## How to install this app
+
+N/A
+
+## How to use this app
+
+Simply run 'node index.js' in your VSCode Terminal
+
+## License Type
+
+MIT
+
+## Contributions
+
+N/a
+
+## Testing Instructions
+
+N/a
